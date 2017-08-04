@@ -3,7 +3,7 @@
 # Dot Product Calculator
 # by Dmitry Kudriavtsev. license: GPL
 
-usage = "Usage: [program] <arrays' length> <array 1> <array 2>"
+usage = "Usage: #{$0} <arrays' length> <array 1> <array 2>"
 
 abort usage if ARGV.length < 2
 n = ARGV.shift.to_i
