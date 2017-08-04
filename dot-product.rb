@@ -12,6 +12,6 @@ abort usage if ARGV.length != n*2
 array1 = ARGV.slice 0, n
 array2 = ARGV.slice n, ARGV.length
 
-result = array1.map(:to_i).zip(array2.map(:to_i)).map(:*).reduce(:+)
+result = array1.map(:to_f).zip(array2.map(:to_f)).map(:*).reduce(:+)
 
 puts "Result: #{result}"
