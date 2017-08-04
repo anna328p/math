@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 # Dot Product Calculator
-# by Dmitry Kudriavtsev. license: GPL
+# by Dmitry Kudriavtsev
 
 usage = "Usage: [program] <arrays' length> <array 1> <array 2>"
 
