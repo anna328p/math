@@ -1,1 +1,2 @@
 !_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+det2x2	/storage/work/math/det-3x3-mat.rb	/^def det2x2(a, b, c, d)$/;"	f	language:Ruby
