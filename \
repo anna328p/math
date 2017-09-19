@@ -7,7 +7,7 @@ usage = "Usage: #{$0} <a> <b> <c> <d>"
 
 abort usage if ARGV.length != 4
 
-args = ARGV.map { |i| i.to_r}
+args = ARGV.map { |i| i.to_r }
 
 a, b, c, d = *args
 
