@@ -4,7 +4,7 @@ def to_rad(d)
 	return d * Math::PI / 180
 end
 
-builder_file = 'ForceVectorLayout.glade'
+builder_file = 'VectorForceLayout.glade'
 
 builder = Gtk::Builder.new file: builder_file
 
@@ -22,13 +22,13 @@ button.signal_connect("clicked") {
 	f = input_force.text.to_f
 	a = input_angle.text.to_f
 
-	i = f * Math.cos to_rad a
-	j = f * Math.sin to_rad a
+	i = f * Math::cos(to_rad(a))
+	j = f * Math::sin(to_rad(a))
 
-	output_a.text = i.to_s
-	output_b.text = j.to_s
+	output_a.text = i.round(2).to_s
+	output_b.text = j.round(2).to_s
 
-	puts "F = #{i}i + #{b}j"
+	puts "F = #{i}i + #{j}j"
 }
 
 
