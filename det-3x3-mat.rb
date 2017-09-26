@@ -15,7 +15,7 @@ usage = "Usage: #{$0} <a> <b> <c> <d> <e> <f> <g> <h> <k>"
 
 abort usage if ARGV.length != 9
 
-args = ARGV.map {|i| i.to_f}
+args = ARGV.map {|i| i.to_r}
 
 def det2x2(a, b, c, d)
 	a * d - b * c
@@ -25,4 +25,4 @@ a, b, c, d, e, f, g, h, k = *args
 
 det = (a * det2x2(e, f, h, k)) - (b * det2x2(d, f, g, k)) + (c * det2x2(d, e, g, h))
 
-puts det
+puts (det.to_f - det.to_i == 0.0) ? det.to_i : det
