@@ -5,9 +5,9 @@ if ARGV.length < 3 || ARGV.length > 4
 	exit 1
 end
 
-a = ARGV[0].to_i
-b = ARGV[1].to_i
-c = ARGV[2].to_i
+a = ARGV[0].to_f
+b = ARGV[1].to_f
+c = ARGV[2].to_f
 
 if ARGV.length == 4 then
 	if ARGV[3] == "-x" then
@@ -28,3 +28,5 @@ d = "#{2*a}"
 puts "\e[4m#{s}\e[0m"
 #puts "─"*(s.length)
 puts d.center s.length
+
+puts "x = #{(-b + Math.sqrt(disc)) / (2 * a)}, x = #{(-b - Math.sqrt(disc)) / (2 * a)}"
